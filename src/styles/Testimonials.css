@@ -1,0 +1,71 @@
+.testimonials {
+  background: linear-gradient(135deg, #2f2f2f, #111); /* Градиентный фон */
+  color: #fff;
+  padding: 80px 24px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Легкая тень для выделения */
+}
+
+.testimonials__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials__title {
+  font-size: 2.8rem;
+  margin-bottom: 48px;
+  color: #FF5733; /* Оранжевый акцент */
+  text-shadow: 0 0 12px rgba(255, 87, 51, 0.6);
+  font-weight: 700;
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.testimonial__card {
+  background-color: #292929;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 87, 51, 0.4); 
+}
+
+.testimonial__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.testimonial__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #edefef; 
+}
+
+.testimonial__date {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.testimonial__text {
+  font-size: 1.05rem;
+  color: #eee;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.testimonial__rating {
+  font-size: 1.2rem;
+  color: #FFD700; /* Золотой для звезд рейтинга */
+}
